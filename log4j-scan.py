@@ -294,7 +294,7 @@ def main():
                 i = i.strip()
                 if i == "" or i.startswith("#"):
                     continue
-                urls.append(i)
+                urls.append(i.rstrip())
 
     dns_callback_host = ""
     if args.custom_dns_callback_host:
